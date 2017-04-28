@@ -32,6 +32,12 @@
             android:name=".RectangularActivity"
             android:label="矩形">
         </activity>
+        <activity android:name=".CubeActivity">
+        </activity>
+        <activity android:name=".STLActivity">
+        </activity>
+        <activity android:name=".stl.MainActivity">
+        </activity>
     </application>
 
 </manifest>

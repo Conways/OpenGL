@@ -21,6 +21,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btPoint;
     private Button btLine;
     private Button btRectangular;
+    private Button btCube;
+    private Button btSTL;
 
 
     @Override
@@ -39,6 +41,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btLine.setOnClickListener(this);
         btRectangular = (Button) this.findViewById(R.id.button_rectangular);
         btRectangular.setOnClickListener(this);
+        btCube = (Button) this.findViewById(R.id.button_cube);
+        btCube.setOnClickListener(this);
+        btSTL = (Button) this.findViewById(R.id.button_stl);
+        btSTL.setOnClickListener(this);
     }
 
 
@@ -56,6 +62,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.button_rectangular:
                 toTargetActivity(RectangularActivity.class);
+                break;
+            case R.id.button_cube:
+                toTargetActivity(CubeActivity.class);
+                break;
+            case R.id.button_stl:
+                toTargetActivity(com.conways.opengl.stl.MainActivity.class);
                 break;
 
             default:
