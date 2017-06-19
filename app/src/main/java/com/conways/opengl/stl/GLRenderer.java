@@ -61,7 +61,8 @@ public class GLRenderer implements GLSurfaceView.Renderer {
         gl.glNormalPointer(GL10.GL_FLOAT, 0, model.getVnormBuffer());
         // 设置三角形顶点数据源
         gl.glVertexPointer(3, GL10.GL_FLOAT, 0, model.getVertBuffer());
-
+//        gl.glColor4f(1.0f,1.0f,0.0f,1.0f);
+        gl.glEnable(GL10.GL_LIGHT1);
         // 绘制三角形
         gl.glDrawArrays(GL10.GL_TRIANGLES, 0, model.getFacetCount() * 3);
 
